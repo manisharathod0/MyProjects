@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login Popup</title>
+<link rel="stylesheet" href="login.css">
+<!-- HTML -->
+<div class="overlay">
+	<div class="modal">
+		<div class="tabs">
+			<button class="active" data-tab="login">Login</button>
+			<button data-tab="signup">Sign Up</button>
+		</div>
+		<div class="tab-content" data-tab="login">
+			<button class="s_btn continue-btn">Connect using Github</button>
+			<h2>Login with Email</h2>
+			<form>
+				<input type="email" placeholder="Email">
+				<input type="password" placeholder="Password">
+				<button class="s_btn login-btn">Login</button>
+			</form>
+		</div>
+		<div class="tab-content" data-tab="signup">
+			<h2>Sign Up</h2>
+			<form>
+				<input type="text" placeholder="Name">
+				<input type="email" placeholder="Email">
+				<input type="password" placeholder="Password">
+				<button class="signup-btn">Sign Up</button>
+			</form>
+		</div>
+	</div>
+</div>
+</body>
+</html>
