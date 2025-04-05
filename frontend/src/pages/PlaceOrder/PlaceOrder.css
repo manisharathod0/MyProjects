@@ -1,35 +1,115 @@
-.place-order{
-    display: flex;
-    align-items: start;
-    justify-content: space-between;
-    gap: 50px;
-    margin-top: 100px;
-}
-.place-order-left{
+
+
+.place-order {
     width: 100%;
-    max-width: max(30%,500px);
-}
-.place-order-left .title{
-    font-size: 30px;
+    padding: 15px;
+  }
+  
+  .place-order-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 40px;
+    width: 100%;
+  }
+  
+  /* Left side - Delivery information */
+  .place-order-left {
+    width: 100%;
+  }
+  
+  .place-order-left .title {
+    font-size: 24px;
     font-weight: 600;
-    margin-bottom: 50px;
-}
-.place-order-left input{
+    margin-bottom: 30px;
+  }
+  
+  .place-order-left input {
     margin-bottom: 15px;
     width: 100%;
     padding: 10px;
     border: 1px solid #c5c5c5;
     border-radius: 4px;
     outline-color: tomato;
-}
-.place-order-left .multi-fields{
+  }
+  
+  .place-order-left .multi-fields {
     display: flex;
-    gap: 10px;
-}
-.place-order-right{
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  /* Right side - Cart totals */
+  .place-order-right {
     width: 100%;
-    max-width: max(40%,500px);
-}
-.place-order .cart-total button{
-    margin-top: 30px;
-}
+  }
+  
+  .cart-total h2 {
+    margin-bottom: 20px;
+  }
+  
+  .cart-total-content {
+    border: 1px solid #e6e6e6;
+    border-radius: 8px;
+    padding: 15px;
+  }
+  
+  .cart-total-details {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+  }
+  
+  .cart-total hr {
+    border: none;
+    height: 1px;
+    background-color: #e6e6e6;
+    margin: 15px 0;
+  }
+  
+  .payment-button {
+    width: 100%;
+    padding: 12px;
+    background-color: tomato;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  .payment-button:hover {
+    background-color: #e03a17;
+  }
+  
+  /* Media queries for tablet and desktop */
+  @media screen and (min-width: 768px) {
+    .place-order {
+      padding: 20px;
+    }
+    
+    .place-order-container {
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 50px;
+      margin-top: 60px;
+    }
+    
+    .place-order-left {
+      max-width: 500px;
+    }
+    
+    .place-order-left .title {
+      font-size: 30px;
+    }
+    
+    .place-order-left .multi-fields {
+      flex-direction: row;
+      gap: 10px;
+    }
+    
+    .place-order-right {
+      max-width: 400px;
+    }
+  }
