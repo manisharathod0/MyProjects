@@ -7,7 +7,8 @@ const Footer = () => {
         <div className='footer' id='footer'>
             <div className="footer-content">
                 <div className="footer-content-left">
-                    <img src={assets.logo} alt="" />
+                    {/* <img src={assets.logo} alt="" /> */}
+                    <h1 className='footer-heading'>HUNGRY HIPPO</h1>
                     <p>Hungry Hippo is an on-demand food delivery platform that brings food from neighborhood restaurants directly to customers doors. The companys food delivery platform lists local restaurants and menu lists on an app for users to order from and track the delivery of its delivery executives, enabling users to order food with speed and convenience.</p>
                     <div className="footer-social-icons">
                         <img src={assets.facebook_icon} alt="" />

@@ -29,6 +29,9 @@
 .footer-content-right h2, .footer-content-center h2{
     color: white;
 }
+.footer-heading{
+    color:rgb(255, 25, 0);
+}
 .footer-social-icons img{
     width: 40px;
     margin-right: 15px;
